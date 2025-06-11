@@ -18,8 +18,8 @@
  */
 package org.eclipse.krazo.test.requestdispatcher;
 
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import org.htmlunit.WebClient;
+import org.htmlunit.html.HtmlPage;
 import org.junit.After;
 
 import static org.junit.Assert.assertEquals;

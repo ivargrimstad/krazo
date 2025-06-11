@@ -2,10 +2,10 @@ package org.eclipse.krazo.test;
 
 import static org.junit.Assert.assertEquals;
 
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.DomElement;
-import com.gargoylesoftware.htmlunit.html.HtmlForm;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import org.htmlunit.WebClient;
+import org.htmlunit.html.DomElement;
+import org.htmlunit.html.HtmlForm;
+import org.htmlunit.html.HtmlPage;
 import java.net.URL;
 import java.nio.file.Paths;
 import org.eclipse.krazo.test.util.WebArchiveBuilder;

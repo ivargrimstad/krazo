@@ -18,8 +18,8 @@
  */
 package org.eclipse.krazo.test;
 
-import com.gargoylesoftware.htmlunit.*;
-import com.gargoylesoftware.htmlunit.html.*;
+import org.htmlunit.*;
+import org.htmlunit.html.*;
 import org.eclipse.krazo.test.util.WebArchiveBuilder;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;

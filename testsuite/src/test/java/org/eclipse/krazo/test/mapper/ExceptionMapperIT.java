@@ -18,9 +18,9 @@
 
 package org.eclipse.krazo.test.mapper;
 
-import com.gargoylesoftware.htmlunit.Page;
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.WebResponse;
+import org.htmlunit.Page;
+import org.htmlunit.WebClient;
+import org.htmlunit.WebResponse;
 import org.eclipse.krazo.test.util.WebArchiveBuilder;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;

@@ -18,9 +18,9 @@
  */
 package org.eclipse.krazo.test.validation;
 
-import com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException;
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.*;
+import org.htmlunit.FailingHttpStatusCodeException;
+import org.htmlunit.WebClient;
+import org.htmlunit.html.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;

@@ -1,9 +1,9 @@
 package org.eclipse.krazo.test.convert;
 
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.HtmlForm;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import com.gargoylesoftware.htmlunit.html.HtmlSubmitInput;
+import org.htmlunit.WebClient;
+import org.htmlunit.html.HtmlForm;
+import org.htmlunit.html.HtmlPage;
+import org.htmlunit.html.HtmlSubmitInput;
 import org.eclipse.krazo.binding.convert.MvcConverter;
 import org.eclipse.krazo.test.convert.type.AnswerToAllDoubleConverter;
 import org.eclipse.krazo.test.util.WebArchiveBuilder;

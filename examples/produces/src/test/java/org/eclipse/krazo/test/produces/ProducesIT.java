@@ -18,9 +18,9 @@
  */
 package org.eclipse.krazo.test.produces;
 
-import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.WebRequest;
-import com.gargoylesoftware.htmlunit.WebResponse;
+import org.htmlunit.WebClient;
+import org.htmlunit.WebRequest;
+import org.htmlunit.WebResponse;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
