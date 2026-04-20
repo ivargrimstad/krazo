@@ -131,10 +131,12 @@ public class ConstraintViolationExceptionMapper implements ExceptionMapper<Const
             // Mark that validation was already performed externally
             bindingResult.setValidationPerformedExternally(true);
 
-            // Invoke the controller method via CDI to get the view name
+            // Invoke the controller method via CDI to get the view name.
+            // Parameters are default values since we cannot retrieve the JAX-RS-bound values
+            // from the ExceptionMapper. The controller is expected to check BindingResult.isFailed()
+            // before using parameter values.
             Object controller = CdiUtils.newBean(CdiUtils.getApplicationBeanManager(), resourceClass);
             Object[] params = createDefaultParams(method);
-            method.setAccessible(true);
             Object result = method.invoke(controller, params);
 
             return processControllerResult(result, method);
