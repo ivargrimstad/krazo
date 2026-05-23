@@ -21,7 +21,6 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.eclipse.krazo.binding.ConstraintViolationExceptionMapper;
 import org.eclipse.krazo.binding.convert.MvcConverterProvider;
 import org.eclipse.krazo.core.ViewResponseFilter;
 import org.eclipse.krazo.core.ViewableWriter;
@@ -48,7 +47,6 @@ public class DefaultConfigProvider implements ConfigProvider {
             CsrfValidateFilter.class,
             CsrfProtectFilter.class,
             CsrfExceptionMapper.class,
-            ConstraintViolationExceptionMapper.class,
             PreMatchingRequestFilter.class,
             PostMatchingRequestFilter.class,
             MvcConverterProvider.class,

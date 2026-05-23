@@ -69,11 +69,6 @@ public class ValidationInterceptor {
     @AroundInvoke
     public Object validateMethodInvocation(InvocationContext ctx) throws Exception {
 
-        // Skip validation if it was already performed externally (e.g., by ConstraintViolationExceptionMapper)
-        if (bindingResult.isValidationPerformedExternally()) {
-            return ctx.proceed();
-        }
-
         Object resource = ctx.getTarget();
         Method method = ctx.getMethod();
 

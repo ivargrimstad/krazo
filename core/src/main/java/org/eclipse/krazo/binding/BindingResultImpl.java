@@ -46,8 +46,6 @@ public class BindingResultImpl implements BindingResult {
 
     private boolean consumed;
 
-    private boolean validationPerformedExternally;
-
     @Override
     public boolean isFailed() {
         this.consumed = true;
@@ -88,14 +86,6 @@ public class BindingResultImpl implements BindingResult {
 
     public boolean hasUnconsumedErrors() {
         return !consumed && (!bindingErrors.isEmpty() || !validationErrors.isEmpty());
-    }
-
-    public boolean isValidationPerformedExternally() {
-        return validationPerformedExternally;
-    }
-
-    public void setValidationPerformedExternally(boolean validationPerformedExternally) {
-        this.validationPerformedExternally = validationPerformedExternally;
     }
 
 }
