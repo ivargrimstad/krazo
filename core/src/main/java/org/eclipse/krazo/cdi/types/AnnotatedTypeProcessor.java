@@ -97,7 +97,6 @@ public class AnnotatedTypeProcessor {
          * org.hibernate.validator.internal.cdi.interceptor.MethodValidated
          */
         return clazz.getName().startsWith("org.hibernate.validator.")
-                && clazz.getName().endsWith(".interceptor.MethodValidated");
-    }
+            && clazz.getName().endsWith("MethodValidated");    }
 
 }
